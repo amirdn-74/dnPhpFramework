@@ -1,0 +1,27 @@
+{
+	"name": "amirh/vanilla-php",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Amir H. Daneshi",
+			"email": "amirhossein.dn.github@hotmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Core\\": "core/",
+			"App\\": "app/"
+		},
+		"files": [
+			"core/pre.php",
+			"core/errorHandler.php",
+			"core/partial.php",
+			"core/asset.php",
+			"core/routeHelper.php"
+		]
+	},
+	"require": {
+		"vlucas/phpdotenv": "^5.4",
+		"doctrine/inflector": "^2.0"
+	}
+}
